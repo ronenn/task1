@@ -1,0 +1,11 @@
+*.retry
+*.log
+.molecule
+.cache
+__pycache__/
+.pytest_cache
+.tox
+.vault_pass
+.idea
+*.iml
+.vagrant
