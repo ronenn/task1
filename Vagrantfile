@@ -7,15 +7,6 @@
 # you're doing.
 Vagrant.configure("2") do |config|
   
-    config.vm.provider "docker" do |dd|
-      dd.build_dir = "."
-      dd.build_args = ["-t", "my_docker_flask:latest"]
-      dd.has_ssh = false    
-      dd.remains_running = false     
-    end
-  
-
-  
   
   config.vm.define "flask1" do |f1|
     f1.vm.provider "docker" do |d|      

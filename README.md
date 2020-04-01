@@ -27,7 +27,19 @@ Requirements:
 1. Make sure vagrant is installed
 2. Make sure docker is installed
 
-After cloning this repo, change directory to the cloned directory and run the following:
+After cloning this repo, change directory to the cloned directory.
+
+Before bringing up the environment, we need the build the docker image of the python flask server. 
+
+To do it, run the following:
+
+```
+docker build -t my_docker_flask .
+```
+
+This will create a docker image for the app.
+
+Then, to bring up the environment, run the following:
 
 ```vagrant up --no-parallel```
 
